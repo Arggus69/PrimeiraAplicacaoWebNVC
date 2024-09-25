@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeiraAplicacaoWebNVC", "PrimeiraAplicacaoWebNVC.csproj", "{521AE027-EC89-4245-803D-28549EF67C30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeiraAplicacaoWebNVC", "PrimeiraAplicacaoWebNVC.csproj", "{521AE027-EC89-4245-803D-28549EF67C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servico", "..\Servico\Servico.csproj", "{B281FB87-E00D-4087-BA51-5B0D32EFEA0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{521AE027-EC89-4245-803D-28549EF67C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{521AE027-EC89-4245-803D-28549EF67C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{521AE027-EC89-4245-803D-28549EF67C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B281FB87-E00D-4087-BA51-5B0D32EFEA0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B281FB87-E00D-4087-BA51-5B0D32EFEA0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B281FB87-E00D-4087-BA51-5B0D32EFEA0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B281FB87-E00D-4087-BA51-5B0D32EFEA0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

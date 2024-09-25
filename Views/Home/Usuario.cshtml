@@ -1,14 +1,38 @@
 ﻿@model UsuariosViewModel;
 
 @{
-    ViewData["Title"] = "Contato";
+    ViewData["Title"] = "Usuario";
 }
 
 <h1>Usuários</h1>
 
+<a class="btn btn-primary" asp-controller="home" asp-action="NovoUsuario"> Novo Usuario</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th colspan="2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
 @{
-    foreach(var usuario in this.Model.listUsuario)
-    {
-        
-    }
+        foreach(var usuario in this.Model.listUsuario)
+        {
+           <tr>
+                <td>@usuario.id</td>
+                <td>@usuario.nome</td>
+                <td>@usuario.email</td>
+                <td>
+                        <a class="btn btn-primary" asp-action="NovoUsuario" asp-controller="Home" asp-route-id="@usuario.id">Editar</a>
+                </td>
+                <td>
+                <a class="btn btn-danger" asp-action="Deletar" asp-controller="Home" asp-route-id="@usuario.id">Excluir</a>
+                </td>
+           </tr>
+        }
 }
+    </tbody>
+</table>
